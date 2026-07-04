@@ -1,0 +1,254 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+---
+
+<Layout
+title="La nostra storia | Pierino Moto"
+description="Dal 1953 ricambi moto ad Ascoli Piceno. Scopri la storia della famiglia Amadio."
+>
+
+<Header />
+
+<section class="hero">
+
+    <div class="overlay">
+
+        <div class="container">
+
+            <h1>La nostra storia</h1>
+
+            <p>
+                Una storia di famiglia, di passione e di motociclette
+                che continua da oltre settant'anni.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container storia">
+
+    <img src="/immagini/storica.jpg" alt="Pierino Moto negli anni passati">
+
+    <div>
+
+        <h2>Tutto ebbe inizio nel 1953</h2>
+
+        <p>
+
+Nel 1953 Pierino Amadio apre la sua attività ad Ascoli Piceno.
+
+Sono anni in cui l'esperienza dell'officina conta più di qualsiasi catalogo:
+molti ricambi non sono facilmente reperibili e spesso occorre trovare
+soluzioni con competenza, manualità e passione.
+
+È proprio questo spirito che dà origine a quella che oggi è Pierino Moto.
+
+        </p>
+
+    </div>
+
+</section>
+
+<section class="citazione">
+
+<div class="container">
+
+<h2>
+
+"Da oltre 70 anni aiutiamo i motociclisti
+a trovare il ricambio giusto."
+
+</h2>
+
+</div>
+
+</section>
+
+<section class="container storia invertita">
+
+<div>
+
+<h2>Una passione tramandata</h2>
+
+<p>
+
+Negli anni l'attività cresce insieme alla città.
+
+Generazioni di motociclisti si affidano alla competenza della famiglia Amadio
+per la manutenzione delle proprie moto, degli scooter e dei modelli d'epoca.
+
+Oggi Ivan continua questa tradizione,
+mantenendo lo stesso rapporto di fiducia costruito nel tempo.
+
+</p>
+
+</div>
+
+<img src="/immagini/con-pieri.jpg" alt="Ivan e Pieri Amadio">
+
+</section>
+
+<section class="container oggi">
+
+<img src="/immagini/oggi.jpg" alt="Negozio Pierino Moto">
+
+<h2>Oggi come allora</h2>
+
+<p>
+
+Le moto sono cambiate.
+La tecnologia è cambiata.
+
+Quello che non è cambiato è il modo di lavorare:
+ascoltare il cliente, capire il problema
+e trovare il ricambio più adatto.
+
+</p>
+
+</section>
+
+<section class="finale">
+
+<div class="container">
+
+<h2>
+
+Le moto cambiano.
+
+<span>La passione resta.</span>
+
+</h2>
+
+</div>
+
+</section>
+
+</Layout>
+
+<style>
+
+.hero{
+
+background:url("/immagini/oggi.jpg") center/cover;
+
+}
+
+.overlay{
+
+background:rgba(0,0,0,.60);
+padding:120px 20px;
+text-align:center;
+
+}
+
+.hero h1{
+
+color:white;
+font-size:3.5rem;
+
+}
+
+.hero p{
+
+color:white;
+font-size:1.3rem;
+max-width:700px;
+margin:auto;
+
+}
+
+.storia{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+
+}
+
+.storia img{
+
+border-radius:16px;
+
+}
+
+.invertita{
+
+margin-top:80px;
+
+}
+
+.citazione{
+
+background:#d71920;
+color:white;
+text-align:center;
+padding:80px 20px;
+
+}
+
+.citazione h2{
+
+font-size:2rem;
+font-weight:400;
+
+}
+
+.oggi{
+
+text-align:center;
+
+}
+
+.oggi img{
+
+max-width:900px;
+margin:auto;
+border-radius:16px;
+margin-bottom:40px;
+
+}
+
+.finale{
+
+background:#111;
+color:white;
+padding:100px 20px;
+text-align:center;
+
+}
+
+.finale span{
+
+color:#d71920;
+
+}
+
+@media(max-width:900px){
+
+.storia{
+
+grid-template-columns:1fr;
+
+}
+
+.invertita{
+
+display:flex;
+flex-direction:column-reverse;
+
+}
+
+.hero h1{
+
+font-size:2.5rem;
+
+}
+
+}
+
+</style>

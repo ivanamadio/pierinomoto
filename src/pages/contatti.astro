@@ -1,0 +1,384 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+---
+
+<Layout
+  title="Contatti | Pierino Moto"
+  description="Contatta Pierino Moto ad Ascoli Piceno. Telefono, WhatsApp, indirizzo e orari."
+>
+
+<Header />
+
+<section class="hero">
+
+    <div class="overlay">
+
+        <div class="container">
+
+            <h1>Contatti</h1>
+
+            <p>
+                Hai bisogno di un ricambio o di un'informazione?
+                Siamo a tua disposizione.
+            </p>
+
+            <div class="buttons">
+
+                <a class="btn rosso" href="tel:+390736251205">
+                    📞 Chiama il negozio
+                </a>
+
+                <a class="btn nero" href="https://wa.me/393497774290">
+                    💬 WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container cards">
+
+<div class="card">
+
+<h2>📞 Telefono</h2>
+
+<p>
+
+<strong>0736 251205</strong>
+
+<br><br>
+
+Per informazioni e disponibilità dei ricambi.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>💬 WhatsApp</h2>
+
+<p>
+
+<strong>349 7774290</strong>
+
+<br><br>
+
+Solo messaggi negli orari di apertura.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>📍 Dove siamo</h2>
+
+<p>
+
+Piazza Immacolata 26
+
+<br>
+
+63100 Ascoli Piceno
+
+</p>
+
+<a
+class="link"
+href="https://maps.google.com/?q=Piazza+Immacolata+26+Ascoli+Piceno"
+target="_blank">
+
+Apri Google Maps →
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>🕘 Orari</h2>
+
+<table>
+
+<tr><td>Lun - Ven</td><td>9:00-13:00</td></tr>
+<tr><td></td><td>15:30-19:00</td></tr>
+<tr><td>Sabato</td><td>9:00-13:00</td></tr>
+<tr><td>Domenica</td><td>Chiuso</td></tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section class="mappa">
+
+<div class="container">
+
+<h2>Come raggiungerci</h2>
+
+<iframe
+src="https://www.google.com/maps?q=Piazza+Immacolata+26+Ascoli+Piceno&output=embed"
+loading="lazy"
+allowfullscreen>
+
+</iframe>
+
+</div>
+
+</section>
+
+<section class="container aiuto">
+
+<h2>Prima di contattarci</h2>
+
+<p>
+
+Per aiutarci a trovare rapidamente il ricambio,
+ti consigliamo di indicarci:
+
+</p>
+
+<ul>
+
+<li>Marca della moto</li>
+
+<li>Modello</li>
+
+<li>Anno di immatricolazione</li>
+
+<li>Cilindrata</li>
+
+<li>Codice del ricambio (se disponibile)</li>
+
+</ul>
+
+</section>
+
+<section class="faq">
+
+<div class="container">
+
+<h2>Domande frequenti</h2>
+
+<div class="faq-item">
+
+<h3>Trattate ricambi originali?</h3>
+
+<p>
+
+Sì, quando disponibili, oltre a numerosi ricambi aftermarket di qualità.
+
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>Posso scrivere su WhatsApp?</h3>
+
+<p>
+
+Sì, rispondiamo ai messaggi durante gli orari di apertura.
+
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>Trattate anche moto d'epoca?</h3>
+
+<p>
+
+Sì. Possiamo aiutarti nella ricerca di ricambi per molti modelli storici.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+</Layout>
+
+<style>
+
+:global(body){
+
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:#f5f5f5;
+
+}
+
+.container{
+
+max-width:1100px;
+margin:auto;
+padding:0 20px;
+
+}
+
+.hero{
+
+background:url("/immagini/oggi.jpg") center/cover;
+
+}
+
+.overlay{
+
+background:rgba(0,0,0,.60);
+padding:90px 0;
+
+}
+
+.hero h1{
+
+color:white;
+font-size:3rem;
+
+}
+
+.hero p{
+
+color:white;
+font-size:1.2rem;
+
+}
+
+.buttons{
+
+margin-top:30px;
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+.btn{
+
+padding:15px 28px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+color:white;
+
+}
+
+.rosso{
+
+background:#d71920;
+
+}
+
+.nero{
+
+background:#111;
+
+}
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+padding:70px 20px;
+
+}
+
+.card{
+
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+.card h2{
+
+margin-top:0;
+color:#d71920;
+
+}
+
+.link{
+
+display:inline-block;
+margin-top:15px;
+font-weight:bold;
+
+}
+
+.mappa{
+
+padding:70px 20px;
+background:white;
+
+}
+
+iframe{
+
+width:100%;
+height:450px;
+border:none;
+border-radius:15px;
+
+}
+
+.aiuto{
+
+padding:70px 20px;
+
+}
+
+.aiuto ul{
+
+line-height:2;
+
+}
+
+.faq{
+
+background:white;
+padding:70px 20px;
+
+}
+
+.faq-item{
+
+margin-bottom:35px;
+
+}
+
+table{
+
+width:100%;
+
+}
+
+td{
+
+padding:6px 0;
+
+}
+
+@media(max-width:700px){
+
+.hero h1{
+
+font-size:2.2rem;
+
+}
+
+}
+
+</style>

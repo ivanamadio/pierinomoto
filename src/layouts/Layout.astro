@@ -1,0 +1,35 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Pierino Moto | Dal 1953",
+  description = "Ricambi e accessori per moto ad Ascoli Piceno."
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>{title}</title>
+
+	<meta name="description" content={description} />
+
+	<meta name="generator" content={Astro.generator} />
+
+	<link rel="icon" href="/favicon.ico" />
+</head>
+
+<body>
+
+	<slot />
+
+</body>
+</html>

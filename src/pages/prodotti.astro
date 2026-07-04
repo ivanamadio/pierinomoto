@@ -1,0 +1,258 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+---
+
+<Layout
+  title="Ricambi e Accessori | Pierino Moto"
+  description="Ricambi, accessori e prodotti per moto, scooter e moto d'epoca ad Ascoli Piceno."
+>
+
+<Header />
+
+<section class="hero">
+    <div class="overlay">
+        <div class="container">
+            <h1>Ricambi e Accessori</h1>
+
+            <p>
+                Da oltre 70 anni selezioniamo ricambi e accessori
+                per moto, scooter e moto d'epoca,
+                aiutando ogni cliente a trovare la soluzione più adatta.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="container prodotti">
+
+    <div class="card">
+        <h2>🔧 Ricambi meccanici</h2>
+        <p>
+            Motore, trasmissione, filtri, frizione, cuscinetti,
+            guarnizioni e componenti di usura.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🛑 Impianto frenante</h2>
+        <p>
+            Pastiglie freno, dischi, tubazioni,
+            liquidi freni e accessori.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🔋 Impianto elettrico</h2>
+        <p>
+            Batterie, candele, lampadine,
+            regolatori, fusibili e motorini d'avviamento.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🛢 Lubrificanti</h2>
+        <p>
+            Oli motore, oli forcella,
+            liquidi refrigeranti, liquidi freni
+            e prodotti per la manutenzione.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🪖 Caschi e Accessori</h2>
+        <p>
+            Caschi, guanti, antipioggia,
+            bauletti, accessori e abbigliamento tecnico.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🏁 Moto d'epoca</h2>
+        <p>
+            Supporto nella ricerca di ricambi
+            per moto storiche e modelli fuori produzione.
+        </p>
+    </div>
+
+</section>
+
+<section class="marchi">
+
+    <div class="container">
+
+        <h2>I marchi trattati</h2>
+
+        <img
+            src="/immagini/marchi.jpg"
+            alt="Marchi trattati da Pierino Moto"
+        />
+
+    </div>
+
+</section>
+
+<section class="contatti">
+
+    <div class="container">
+
+        <h2>Non trovi il ricambio?</h2>
+
+        <p>
+            Se conosci marca, modello e anno della moto,
+            ti aiutiamo a trovare il componente più adatto.
+        </p>
+
+        <div class="azioni">
+
+            <a class="btn rosso" href="tel:+390736251205">
+                📞 Chiama il negozio
+            </a>
+
+            <a class="btn nero" href="https://wa.me/393497774290">
+                💬 WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</Layout>
+
+<style>
+
+:global(body){
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f7f7f7;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:0 20px;
+}
+
+.hero{
+
+    background:url("/immagini/oggi.jpg") center/cover;
+
+}
+
+.overlay{
+
+    background:rgba(0,0,0,.60);
+    padding:100px 0;
+
+}
+
+.hero h1{
+
+    color:white;
+    font-size:3rem;
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    color:white;
+    max-width:700px;
+    font-size:1.2rem;
+
+}
+
+.prodotti{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    padding:70px 20px;
+
+}
+
+.card{
+
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+.card h2{
+
+    margin-top:0;
+    color:#d71920;
+
+}
+
+.marchi{
+
+    padding:70px 20px;
+    background:white;
+    text-align:center;
+
+}
+
+.marchi img{
+
+    width:100%;
+    max-width:900px;
+    border-radius:12px;
+    margin-top:30px;
+
+}
+
+.contatti{
+
+    padding:80px 20px;
+    text-align:center;
+
+}
+
+.azioni{
+
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+
+.btn{
+
+    padding:16px 28px;
+    border-radius:8px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+.rosso{
+
+    background:#d71920;
+
+}
+
+.nero{
+
+    background:#111;
+
+}
+
+@media(max-width:700px){
+
+.hero h1{
+
+font-size:2.2rem;
+
+}
+
+}
+
+</style>

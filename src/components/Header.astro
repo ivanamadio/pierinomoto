@@ -1,0 +1,74 @@
+<header class="header">
+  <div class="container">
+
+    <a href="/" class="brand">
+      <img src="/immagini/logo.jpg" alt="Pierino Moto" />
+    </a>
+
+    <nav>
+      <a href="/">Home</a>
+      <a href="#storia">Chi siamo</a>
+      <a href="/prodotti">Prodotti</a>
+      <a href="/contatti">Contatti</a>
+      <a href="/storia">La nostra storia</a>
+    </nav>
+
+  </div>
+</header>
+
+<style>
+.header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:white;
+    border-bottom:1px solid #ececec;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:14px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.brand img{
+    height:72px;
+}
+
+nav{
+    display:flex;
+    gap:32px;
+}
+
+nav a{
+    font-weight:600;
+    color:#222;
+    transition:.2s;
+}
+
+nav a:hover{
+    color:#d71920;
+}
+
+@media(max-width:800px){
+
+    .container{
+        flex-direction:column;
+        gap:18px;
+    }
+
+    nav{
+        gap:18px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .brand img{
+        height:60px;
+    }
+
+}
+</style>

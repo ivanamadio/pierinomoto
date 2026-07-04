@@ -1,0 +1,298 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+---
+
+<Layout
+  title="La nostra storia | Pierino Moto"
+  description="Dal 1953 la famiglia Amadio è un punto di riferimento per ricambi e accessori moto ad Ascoli Piceno."
+>
+
+<Header />
+
+<section class="hero">
+  <div class="overlay">
+    <div class="container">
+      <span class="badge">DAL 1953</span>
+
+      <h1>La nostra storia</h1>
+
+      <p>
+        Oltre settant'anni di lavoro, passione e competenza
+        al servizio dei motociclisti.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="container story">
+
+  <div class="row">
+
+      <img src="/immagini/storica1.jpg" alt="Le origini di Pierino Moto">
+
+      <div>
+
+          <h2>Le origini</h2>
+
+          <p>
+
+Nel 1953 Pierino Amadio apre la propria attività ad Ascoli Piceno.
+
+Sono anni in cui l'esperienza dell'officina vale più di qualsiasi catalogo:
+ogni ricambio richiede conoscenza, manualità e tanta passione.
+
+Nasce così quella che, negli anni, diventerà Pierino Moto.
+
+          </p>
+
+      </div>
+
+  </div>
+
+  <div class="row reverse">
+
+      <div>
+
+          <h2>Una crescita costruita sulla fiducia</h2>
+
+          <p>
+
+Con il passare degli anni l'attività diventa un punto di riferimento
+per generazioni di motociclisti.
+
+Cambiano le moto, cambiano i ricambi,
+ma rimane lo stesso modo di lavorare:
+ascoltare il cliente e trovare sempre la soluzione migliore.
+
+          </p>
+
+      </div>
+
+      <img src="/immagini/storica2.jpg" alt="Foto storica">
+
+  </div>
+
+  <div class="citazione">
+
+      <h2>
+
+"Oltre 70 anni di esperienza non si raccontano.
+Si costruiscono ogni giorno."
+
+      </h2>
+
+  </div>
+
+  <div class="row">
+
+      <img src="/immagini/con-pieri.jpg" alt="Pieri e Ivan Amadio">
+
+      <div>
+
+          <h2>Una passione tramandata</h2>
+
+          <p>
+
+L'esperienza maturata in oltre settant'anni continua oggi
+grazie a Ivan Amadio, che porta avanti l'attività di famiglia
+con lo stesso entusiasmo e la stessa attenzione verso il cliente.
+
+          </p>
+
+      </div>
+
+  </div>
+
+  <div class="row reverse">
+
+      <div>
+
+          <h2>Il negozio oggi</h2>
+
+          <p>
+
+Oggi Pierino Moto continua ad essere un punto di riferimento
+ad Ascoli Piceno per ricambi e accessori dedicati
+a moto, scooter e moto d'epoca.
+
+L'obiettivo è rimasto lo stesso:
+offrire esperienza, disponibilità e competenza.
+
+          </p>
+
+      </div>
+
+      <img src="/immagini/oggi.jpg" alt="Pierino Moto oggi">
+
+  </div>
+
+</section>
+
+<section class="finale">
+
+    <div class="container">
+
+        <h2>
+
+Le moto cambiano.
+
+<span>La passione resta.</span>
+
+        </h2>
+
+    </div>
+
+</section>
+
+</Layout>
+
+<style>
+
+.hero{
+
+    background:url("/immagini/oggi.jpg") center/cover;
+    min-height:55vh;
+
+}
+
+.overlay{
+
+    background:rgba(0,0,0,.60);
+    min-height:55vh;
+
+    display:flex;
+    align-items:center;
+
+}
+
+.container{
+
+    max-width:1100px;
+    margin:auto;
+    padding:0 20px;
+
+}
+
+.badge{
+
+    display:inline-block;
+    background:#d71920;
+    color:white;
+    padding:8px 18px;
+    border-radius:30px;
+    font-weight:bold;
+
+}
+
+.hero h1{
+
+    color:white;
+    font-size:3.5rem;
+    margin:20px 0;
+
+}
+
+.hero p{
+
+    color:white;
+    max-width:700px;
+    font-size:1.2rem;
+
+}
+
+.story{
+
+    padding:80px 20px;
+
+}
+
+.row{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+    margin-bottom:90px;
+
+}
+
+.reverse{
+
+    grid-template-columns:1fr 1fr;
+
+}
+
+.reverse img{
+
+    order:2;
+
+}
+
+.reverse div{
+
+    order:1;
+
+}
+
+.row img{
+
+    border-radius:16px;
+
+}
+
+.row p{
+
+    line-height:1.8;
+
+}
+
+.citazione{
+
+    background:#d71920;
+    color:white;
+    text-align:center;
+    padding:70px 30px;
+    border-radius:20px;
+    margin-bottom:90px;
+
+}
+
+.finale{
+
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+
+}
+
+.finale span{
+
+    color:#d71920;
+
+}
+
+@media(max-width:900px){
+
+.row{
+
+display:block;
+
+}
+
+.row img{
+
+margin-bottom:30px;
+
+}
+
+.hero h1{
+
+font-size:2.4rem;
+
+}
+
+}
+
+</style>
