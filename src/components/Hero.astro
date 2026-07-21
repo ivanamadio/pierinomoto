@@ -1,201 +1,157 @@
 <section class="hero">
+  <img
+    src="/immagini/copertina.jpg"
+    alt="Pierino Moto - Ricambi moto dal 1953"
+    class="hero-image"
+  />
 
-    <div class="overlay">
+  <div class="overlay">
+    <div class="content">
+      <span class="badge">DAL 1953</span>
 
-        <div class="content">
+      <h1>
+        Ricambi moto,<br />
+        esperienza e passione<br />
+        dal 1953.
+      </h1>
 
-            <span class="badge">
-                DAL 1953
-            </span>
+      <p>
+        Da oltre settant'anni siamo al fianco dei motociclisti di Ascoli Piceno,
+        offrendo ricambi, accessori e consulenza per moto, scooter e moto d'epoca.
+      </p>
 
-            <h1>
-                Ricambi moto,<br>
-                esperienza e passione<br>
-                dal 1953.
-            </h1>
+      <div class="buttons">
+        <a href="tel:+390736251205" class="btn primary">
+          📞 Chiama il negozio
+        </a>
 
-            <p>
-                Da oltre settant'anni siamo al fianco dei motociclisti di Ascoli Piceno,
-                offrendo ricambi, accessori e consulenza per moto, scooter e moto d'epoca.
-            </p>
+        <a
+          href="https://wa.me/393497774290"
+          target="_blank"
+          class="btn secondary"
+        >
+          💬 WhatsApp
+        </a>
+      </div>
 
-            <div class="buttons">
-
-                <a
-                    href="tel:+390736251205"
-                    class="btn primary">
-
-                    📞 Chiama il negozio
-
-                </a>
-
-                <a
-                    href="https://wa.me/393497774290"
-                    target="_blank"
-                    class="btn secondary">
-
-                    💬 WhatsApp
-
-                </a>
-
-            </div>
-
-            <div class="info">
-
-                📍 Piazza Immacolata 26 · Ascoli Piceno
-
-                <br>
-
-                🕘 Lun–Ven 9:00–13:00 • 15:30–19:00
-                <br>
-                Sab 9:00–13:00
-
-            </div>
-
-        </div>
-
+      <div class="info">
+        📍 Piazza Immacolata 26 · Ascoli Piceno<br />
+        🕘 Lun–Ven 9:00–13:00 • 15:30–19:00<br />
+        Sab 9:00–13:00
+      </div>
     </div>
-
+  </div>
 </section>
 
 <style>
-
-.hero{
-
-    min-height:80vh;
-
-    background-image:url("/immagini/copertina.jpeg");
-
-    background-size:cover;
-
-    background-position:center 20%;
-
+.hero {
+  position: relative;
+  min-height: 80vh;
+  overflow: hidden;
 }
 
-.overlay{
-
-    background:rgba(0,0,0,.58);
-
-    min-height:80vh;
-
-    display:flex;
-
-    align-items:center;
-
+.hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
-.content{
-
-    max-width:1200px;
-
-    margin:auto;
-
-    color:white;
-
-    padding:70px 25px;
-
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
 }
 
-.badge{
-
-    background:#d71920;
-
-    display:inline-block;
-
-    padding:10px 18px;
-
-    border-radius:30px;
-
-    font-weight:bold;
-
-    margin-bottom:20px;
-
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: auto;
+  padding: 70px 25px;
+  color: white;
 }
 
-h1{
-
-    font-size:3.4rem;
-
-    max-width:760px;
-
-    line-height:1.1;
-
+.badge {
+  display: inline-block;
+  background: #d71920;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
-p{
-
-    max-width:700px;
-
-    font-size:1.25rem;
-
-    line-height:1.7;
-
-    color:#f0f0f0;
-
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
 }
 
-.buttons{
-
-    display:flex;
-
-    gap:18px;
-
-    margin-top:35px;
-
-    flex-wrap:wrap;
-
+p {
+  max-width: 700px;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #f0f0f0;
 }
 
-.btn{
-
-    padding:16px 28px;
-
-    border-radius:8px;
-
-    font-weight:bold;
-
+.buttons {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 35px;
 }
 
-.primary{
-
-    background:#d71920;
-
-    color:white;
-
+.btn {
+  padding: 16px 28px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.2s;
 }
 
-.secondary{
-
-    background:white;
-
-    color:#222;
-
+.primary {
+  background: #d71920;
+  color: white;
 }
 
-.info{
-
-    margin-top:35px;
-
-    color:#ddd;
-
-    line-height:1.8;
-
+.secondary {
+  background: white;
+  color: #222;
 }
 
-@media(max-width:700px){
-
-    h1{
-
-        font-size:2.2rem;
-
-    }
-
-    p{
-
-        font-size:1rem;
-
-    }
-
+.btn:hover {
+  transform: translateY(-2px);
 }
 
+.info {
+  margin-top: 35px;
+  line-height: 1.8;
+  color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 90vh;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    text-align: center;
+  }
+}
 </style>
